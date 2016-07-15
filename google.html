@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Google</title>
+		<style>
+            nav {
+                
+                margin-top: 15px;
+                text-align: right;
+                font-size: 16px;
+                font-family: Arial sans-serif;
+            }
+
+		    #google {
+                
+			    margin-top: 145px;
+			    text-align: center;
+		    }
+		    #canada{      
+                
+			    color: #5f9bf6;
+			    margin-left: 209px;
+			    position: relative;
+			    top: -23px;
+			    white-space: nowrap;
+                font-size: 16px;
+                font-family: roboto-regular, arial, sans-serif;
+		    }
+            .inputtext{
+                position: relative;
+                margin-top: 10px;
+                box-shadow:none;
+                height: 40px;
+                width: 570px;
+                padding: 8px;
+                font-size: 22px;
+                border: 1px solid #d9d9d9;
+
+            }
+
+            .inputtext:hover{
+                border: 2px solid #808080;
+            }
+
+            ul {                
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            li {
+                float: right;
+                font-family: roboto-regular, arial, sans-serif;
+                font-size: 16px;
+                padding-right: 20px;
+                padding-top: 10px;
+                color: darkgray;
+                vertical-align:baseline;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+
+            .mic{
+                height: 25px;
+                width: 25px;                
+                margin-top: 18px;
+                position: absolute;
+                margin-left: -32px;
+            }
+
+            .btn {
+                border: 1px solid transparent;
+                background-color: #f1f1f1;
+                padding: 8px;
+                position: relative;
+                margin-top: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+                align-content: center;
+                font-family: roboto-regular, arial, sans-serif;
+                font-size: 13px;
+                color: gray;
+                font-weight: bold;
+
+            }
+                .btn:hover {
+                    color: darkgray;
+                    background-color: #f5f5f5;
+                }
+
+            .lang {
+                padding: 40px;
+                font-family: roboto-regular, arial, sans-serif;
+                font-size: 13px;
+                color: gray;
+            }
+
+            .lang a {
+                text-decoration: none;
+                color: blue;
+            }
+
+            .lang a:hover {
+                text-decoration: underline;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-top: 1px solid #e5e5e5;
+                background-color: #fafafa;
+                width: 98%;
+            }
+
+                footer a {
+                    color: gray;
+                    padding: 10px;
+                    font-size: 13px;
+                    font-family: roboto-regular, arial, sans-serif;
+                }
+
+            .lf {
+                float: left;
+            }
+
+            .rg{
+                float: right;
+            }
+
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+            <ul>
+                <li><a href="#"><svg fill="#707070" height="30" viewBox="0 0 25 25" width="30">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                        <path d="M0 0h24v24H0z" fill="none" /></svg></a></li>
+                <li><a href="#"><svg fill="#707070" height="25" viewBox="0 0 24 24" width="25">
+                        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" /></svg></a>
+                </li>
+                <li>
+                    <a href="#"><svg fill="#707070" height="25" viewBox="0 0 24 24" width="25">
+                        <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg></a>
+                </li>
+                <li><a href="images.google.com">Images</a></li>
+                <li><a href="gmail.com">Gmail</a></li>
+            </ul>
+        </nav>
+		<div id="google"><img src="https://www.google.ca//images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+			<div id="canada">Canada</div>
+            <div><input class="inputtext" type="search" />
+                <a href="#" title="Search by Voice"><img class="mic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC" /></a>
+            </div>
+		</div>
+		
+        <center>
+		    <div>
+                <button class="btn">Google Search</button>
+                <button class="btn">I'm feeling lucky</button>
+        
+            </div>
+		    <div class="lang">Google.ca offered in: <a href="#">Français</a></div>
+        </center>
+		<footer>
+		    <div class="lf"><a href="#">Advertising</a>
+                            <a href="#">Business</a>
+                            <a href="#"> About</a>
+            </div>
+            <div class="rg">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+                
+            </div>
+        </footer>
+		
+	</body>
+
+</html>

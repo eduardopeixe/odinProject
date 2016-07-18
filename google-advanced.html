@@ -1,0 +1,567 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link type="image/x-icon" rel="shortcut icon" href="http://www.google.ca/images/branding/product/ico/googleg_lodp.ico" />
+    <title>build this webpage - Google</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <style>
+
+        a {
+            text-decoration: none;
+            color: gray;
+            font-family: roboto-regular, arial, sans-serif;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: slategray;
+        }
+
+
+
+        nav {
+            background-color: #f1f1f1;
+            width: 100%;
+            float: left;
+
+        }
+
+        nav ul{ 
+            list-style: none;
+            margin: 0;
+            border-bottom: 1px solid #f5f5f5;
+            
+            overflow: hidden;
+        }
+
+        nav ul li{
+            padding-top: 08px;
+            float: left;
+        }
+        nav ul li img {
+            padding-top: 8px;
+            margin-left: 15px;
+            background-color: transparent;
+            position: relative;
+            height: 30px;
+            vertical-align: baseline;
+            padding-right: 20px;
+        }
+
+        nav ul li input {
+            
+            padding-right: 0;
+            padding-left: 10px;
+            position: relative;
+            border: 1px solid lightgray;
+            height: 40px;
+            width: 593px;
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 16px;
+        }
+
+        nav ul li a {
+        
+
+
+        }
+
+        nav ul li svg {            
+            position: relative;
+            padding: 8px;
+            border-radius: 1px;
+            
+        }
+
+        .mic {
+            height: 25px;
+            position: absolute;
+            margin-left: -40px;
+            margin-top: -45px;
+        }
+
+        .rg{
+            float: right;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+        }
+
+        .mag {
+            background-color: #4285f4;
+        }
+
+        .content{
+            margin-left: 110px;
+            clear: both;
+        }
+
+
+        div div li {
+            list-style: none;
+            float: left;
+            margin: 5px;
+            padding: 10px;
+            padding-bottom: 25px;
+            font-size: 13px;
+            border-bottom: 1px solid #ebebeb;
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 13px;
+        }
+
+        li a:hover{
+            color: black;
+            text-decoration: none;
+
+        }
+
+      
+
+        .sel {
+            font-weight: bolder;
+            color: #4285f4;
+            border-bottom: 4px solid #4285f4;
+            padding: 10px;
+            padding-bottom: 21px;
+        }
+
+        .mn-dwn-arw {
+            border-color: #909090 transparent;
+            border-style: solid;
+            border-width: 4px 4px 0 4px;
+            width: 0;
+            height: 0;
+            margin-top: 5px;
+            margin-left: 2px;
+            position: absolute;
+        }
+
+        .rgbtt {
+            float: right;
+            padding-top: 10px;
+            padding-left: 0;
+            padding-bottom: 5px;
+        }
+
+        .btn{
+            border: 1px solid #cccccc;
+            padding: 3px 12px 3px 12px;
+            background-color: #f5f5f5;
+        }
+
+        .timer {
+            clear: both;
+            position: relative;
+            margin-left: 25px;
+            padding-top: 10px;
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 13px;
+            color: gray;
+        }
+
+        .result{
+            clear: both;
+            position: relative;
+            margin-left: 25px;
+            padding-top: 25px;
+            width: 600px;
+        }
+
+        .rtitle {
+            color: darkblue;
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .rlink {
+            color: darkgreen;
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 14px;
+            font-weight: lighter;
+            margin-top: 3px;
+        }
+
+        .rpage {            
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 13px;
+            color: #5e5454;
+            font-weight: lighter;
+            margin-top: 3px;
+            line-height: 16px;
+        }
+
+        .srel {
+            clear: both;
+            position: relative;
+            margin-left: 23px;
+            margin-top: 25px;
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 18px;
+            color: #808080;
+        }
+
+        .stb {
+            clear: both;            
+            position: relative;
+            margin-left: 23px;
+            margin-top: 10px;
+            font-family: roboto-regular, arial, sans-serif;
+            font-size: 13px;
+            color: blue;
+        }
+
+        div div table tr td {
+            padding: 4px;
+            padding-right: 10px;
+        }
+
+        .gg {
+            position: relative;
+            align-content: center;
+            clear: both;
+            margin-top: 45px;
+            margin-left: 170px;
+            
+            
+        }
+
+        .ggi {
+            clear:both;
+            height: 40px;
+            margin:1px;
+        }
+
+        .numb{
+            clear:both;
+            width: 300px;
+            margin: 5px 200px;
+        }
+
+        .numli {
+            color: #5C96f6;
+            padding: 0 4.9px;
+            font-size: 12px;
+        }
+
+        .nex{
+            position: relative;
+            color: #5c96f6;
+            margin-left: 285px;
+        }
+
+        .ft{
+            border-top: 1px solid lightgray;
+            clear:both;
+            color: #aaaaaa;
+            font-size: 16px;
+            padding-left: 140px;
+            padding-top: 6px;
+            margin-top: 25px;
+            height: 50px;
+        }
+
+        footer div ul {
+            list-style: none;
+        }
+
+        footer div ul li{
+            float: left;
+            margin-top: 15px;
+            margin-right: 25px;
+            font-size: 13px;
+        }
+
+    </style>
+    
+    
+
+</head>
+<body>
+    <!-- search bar and google icons -->
+    <nav>
+        <ul>
+            <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png" /></a></li>
+            <li><input type="search" value="build this webpage" /></li>
+            <li><a href="#"><svg class="mag" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                </svg></a>
+                <a href="#" title="Search by Voice"><img class="mic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC" /></a>
+            </li>
+            <li class="rg">
+                <a href="#">
+                    <svg fill="#707070" height="30" viewBox="0 0 25 25" width="30">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </a>
+            </li>
+            <li class="rg">
+                <a href="#">
+                    <svg fill="#707070" height="25" viewBox="0 0 24 24" width="25">
+                        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="rg">
+                <a href="#">
+                    <svg fill="#707070" height="25" viewBox="0 0 24 24" width="25">
+                        <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </a>
+            </li> 
+        </ul>
+    </nav>
+
+    <!-- search options -->
+    <div class="content">
+        <!-- search options -->
+        <div class="sopt">
+            <ul>
+                <li><a class="sel" href="#">All</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">More<span class="mn-dwn-arw"></span></a></li>
+                <li><a href="#">Search Tools</a></li>
+                <li class="rgbtt">
+                    <button class="btn">
+                        <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+                        </svg>
+                    </button>
+                </li>
+                <li class="rgbtt">
+                    <button class="btn sel">
+                        <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        <svg fill="#707070" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- search time counter-->
+        <div class="timer">About 2,120,000 results (0.63 seconds)</div>
+
+        <!-- results -->
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">With zero coding experience, artist building 180 webpages in 180 days
+                </h1>
+            </a>
+            <h2 class="rlink">
+                arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-in-180...<span class="mn-dwn-arw"></span>
+            </h2>
+            <p class="rpage">
+                Jul 26, 2013 - 117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she ...
+            </p>
+
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    I'm learning to code by building 180 websites in 180 ... - Jennifer Dewalt
+                </h1>
+            </a>
+            <h2 class="rlink">
+                blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in
+            </h2>
+            <p class="rpage">
+                Jul 24, 2013 - Build a different website every day for 180 consecutive days. Every website must be accompanied by a blog post. Any code I write must be ...
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    Watch this webpage code itself. : InternetIsBeautiful - Reddit
+                </h1>
+            </a>
+            <h2 class="rlink">
+                https://www.reddit.com/r/InternetIsBeautiful/.../watch_this_webpage_code_itself/
+            </h2>
+            <p class="rpage">
+                Apr 1, 2015 - Medal of BeautyWatch this webpage code itself. (codepen.io). submitted 1 year ago by fyrie · 58 comments; share. loading... all 58 comments.
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    Google Homepage
+                </h1>
+            </a>
+            <h2 class="rlink">
+                swatikumar16.github.io/google-homepage/
+            </h2>
+            <p class="rpage">
+                Jul 26, 2013 - 117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she .
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    Bootstrap · The world's most popular mobile-first and responsive front ...
+                </h1>
+            </a>
+            <h2 class="rlink">
+                getbootstrap.com/
+            </h2>
+            <p class="rpage">
+                ... utilizes the two most popular CSS preprocessors, Less and Sass. Quickly get started with precompiled CSS or build on the source. Responsive across devices ...
+            </p>
+            <p class="rpage">
+                You've visited this page 5 times. Last visit: 10/08/15
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    How I Built This Website - Phil's Old Radios
+                </h1>
+            </a>
+            <h2 class="rlink">
+                antiqueradio.org/howto.htm
+            </h2>
+            <p class="rpage">
+                You don't need an expensive computer to build a website. What you need is a machine that can connect to the Internet and do basic text editing and image ...
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    How to Make a Website - Step-by-Step Guide for Beginners
+                </h1>
+            </a>
+            <h2 class="rlink">
+                websitesetup.org/
+            </h2>
+            <p class="rpage">
+                Learn how to make a website and set it up. This site contains different tutorials on how to build a website using WordPress, Joomla, Drupal & HTML.
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    Build Your Own Webpage | Codecademy
+                </h1>
+            </a>
+            <h2 class="rlink">
+                https://www.codecademy.com/courses/web-beginner-en-LceTK
+            </h2>
+            <p class="rpage">
+                Build Your Own Webpage. What you'll be making. Before we ask you to write a bunch of code, we think it's helpful for you to see exactly what you'll be making in ...
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    WIX.com: Free Website Builder | Create a Free Website
+                </h1>
+            </a>
+            <h2 class="rlink">
+                www.wix.com/
+            </h2>
+            <p class="rpage">
+                Create a free website with Wix.com. Customize with Wix' free website builder, no coding skills needed. Choose a design, begin customizing and be online today!
+            </p>
+        </div>
+        <div class="result">
+            <a href="#">
+                <h1 class="rtitle">
+                    The Ultimate Guide To Building A Personal Website | College Info Geek
+                </h1>
+            </a>
+            <h2 class="rlink">
+                collegeinfogeek.com › Blog › Internet
+            </h2>
+            <p class="rpage">
+                May 16, 2016 - Having a personal website is one of the most important things for building your brand. Let's learn how to make one in 5 steps.
+            </p>
+        </div>
+
+        <!-- Search related things -->
+        <div class="srel">
+            Searches related to build this webpage
+        </div>
+        
+        <div class="stb">
+            <table>
+                <tr>
+                    <td>free webpage</td>
+                    <td>jennifer dewalt</td>
+                </tr>
+                <tr>
+                    <td>how to build a website</td>
+                    <td>yumhacker</td>
+                </tr>
+                <tr>
+                    <td>how to build a webpage from scratch</td>
+                    <td>jquery</td>
+                </tr>
+                <tr>
+                    <td> how to build a web page</td>
+                    <td>bootstrap</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="gg">
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleGo.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleO.png" />
+            <img class="ggi" src="https://raw.githubusercontent.com/Niblu/google-results/master/pics/googleGle.png">
+        </div>
+
+        <div class="numb">
+            <ul>
+                <li class="numli">1</li>
+                <li class="numli">2</li>
+                <li class="numli">3</li>
+                <li class="numli">4</li>
+                <li class="numli">5</li>
+                <li class="numli">6</li>
+                <li class="numli">7</li>
+                <li class="numli">8</li>
+                <li class="numli">9</li>
+                <li class="numli">10</li>
+            </ul>
+            <p class="nex">Next</p>
+        </div>
+    </div>
+
+    <footer class="ft">
+        <div class="loc">
+            Location - Use precise location - Learn More
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Send Feedback</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Use Google.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

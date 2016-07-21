@@ -1,0 +1,24 @@
+.btn {
+	border: 1px solid transparent;
+	background-color: #d6d6d6;
+	font-family: cursive;	
+}
+
+button:hover {
+	border: 1px solid gray;
+	background-color: #a5a5a5;
+	color: white;
+}
+
+.grid {
+	position: absolute;
+}
+
+.gcell {	
+    display: inline-block;
+	border: 1px solid #eeeeee;
+	margin: 0;
+	padding: 0;
+	resize: auto;
+}
+
